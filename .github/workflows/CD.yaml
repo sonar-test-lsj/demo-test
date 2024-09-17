@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2
-  AWS_S3_BUCKET: app-release-files
+  AWS_S3_BUCKET: masiljangajji-bucket-lsj
   AWS_CODE_DEPLOY_APPLICATION: github-action-depoly
   AWS_CODE_DEPLOY_GROUP: My-Music-Depoly
 
