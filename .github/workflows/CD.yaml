@@ -29,7 +29,6 @@ jobs:
         run: chmod +x ./gradlew
 
       # 3. AWS configure 설정
-      - uses: actions/checkout@v2
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
