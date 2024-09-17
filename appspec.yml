@@ -2,21 +2,19 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
-    destination: /home/ec2-user/spring-github-action
+  - source:  /
+    destination: /home/ubuntu/spring-github-action
     overwrite: yes
 
 permissions:
-  - object: /home/ec2-user/spring-github-action
-    owner: ec2-user
-    group: ec2-user
+  - object: /
+    owner: ubuntu
+    group: ubuntu
 
 hooks:
   AfterInstall:
     - location: scripts/stop.sh
       timeout: 60
-      runas: ec2-user
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 60
-      runas: ec2-user
