@@ -14,7 +14,7 @@ public class Home {
     public String home() throws UnknownHostException {
 
         InetAddress ip = InetAddress.getLocalHost();
-        return "Hello" + ip.getHostAddress();
+        return "Hello!" + ip.getHostAddress();
     }
 
 }
